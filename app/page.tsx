@@ -29,7 +29,7 @@ export default function Home() {
               Custom Hand Crafted Jewellary Manufactures. Reasonable Prices With
               Quality Gurantee
             </p>
-            <div className="flex justify-center md:justify-start space-x-4">
+            <div className="flex justify-center md:justify-start sm:items- space-x-4">
               <button className="primary-btn">Order Now</button>
               <button className="primary-btn">Explore Image Gallery</button>
             </div>
@@ -38,10 +38,10 @@ export default function Home() {
         {/*Product Image*/}
         <motion.div
           className="hidden md:flex justify-center items-center"
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
-            type: "spring",
+            type: "spring ",
             stiffness: 260,
             delay: 0.5,
             duration: 0.8,
@@ -51,7 +51,7 @@ export default function Home() {
             src={HeroImage}
             alt="Hero Image"
             className="w-full h-auto object-contain"
-            style={{ maxHeight: "80vh", maxWidth: "100%" }}
+            style={{ maxHeight: "75vh", maxWidth: "100%" }}
           />
         </motion.div>
       </div>
