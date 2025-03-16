@@ -35,6 +35,7 @@ export default function Home() {
             </div>
           </div>
         </motion.div>
+
         {/*Product Image*/}
         <motion.div
           className="hidden md:flex justify-center items-center"
